@@ -5,9 +5,8 @@ import filmlist from '../../data/imdb_films'
 
 class Films extends Component {
     render(){
-        console.log(filmlist[0])
-        const filteredList = filmlist.filter( film => (film.Response === "True"))
-        console.log(filteredList)
+        // console.log(filmlist[0])
+        const filteredList = filmlist.filter( film => (film.Response === "True"));
         return(
             <ul>
                 {filteredList
