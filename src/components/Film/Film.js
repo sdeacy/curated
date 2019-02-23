@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
 import "./film.css"
-import { Container, Row, Col } from 'react-bootstrap';
 
 class Film extends Component {
     render(){
@@ -13,26 +12,18 @@ imdbScore, Metascore
         // console.log(title)
         return(
             <li>
-                <Container>
-                    <Row>
-                        <Col xs={6}>
                 <img src={Poster} alt=""/>
-                </Col >
-                <Col xs={6}>
                 <div className='film__info'>
                     <h3><a href={url}>{title}</a> </h3>
-                    <h6>Rotten Tomato Score: {meterScore}</h6>
-                    <h6>IMDB Score: {imdbScore}</h6>
-                    <h6>Metascore: {Metascore}</h6>
-                    <h6>Votes: {imdbVotes}</h6>
-                    <h6>Awards: {Awards}</h6>
-                    <h6>Country: {Country}</h6>
-                    <h6>Language: {Language}</h6>
+                    <h4>Rotten Tomato Score: {meterScore}</h4>
+                    <h4>IMDB Score: {imdbScore}</h4>
+                    <h4>Metascore: {Metascore}</h4>
+                    <h4>Votes: {imdbVotes}</h4>
+                    <h4>Awards: {Awards}</h4>
+                    <h4>Country: {Country}</h4>
+                    <h4>Language: {Language}</h4>
                     <p className='film__plot'>{plot}</p>
                 </div>
-                </Col>
-                </Row> 
-                </Container>
             </li>
         )
     }
